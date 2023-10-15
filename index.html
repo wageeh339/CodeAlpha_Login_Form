@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <!-- Design by foolishdeveloper.com -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="home.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="login-form">
+        <h3>Login</h3>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+        <button onclick="login()">Log In</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForm()">Register here</a></p>
+    </form>
+    <form id="register-form" style="display: none;">
+        <h3>Register</h3>
+        <label for="reg-username">Email or Phone</label>
+        <input type="text" placeholder="Email or Phone" id="reg-username">
+        <label for="reg-password">Password</label>
+        <input type="password" placeholder="Password" id="reg-password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="toggleForm()">Log in here</a></p>
+    </form>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
